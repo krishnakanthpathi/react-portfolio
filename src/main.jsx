@@ -4,7 +4,7 @@ import App from './App'
 import Navbar from './components/Navbar'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  // <StrictMode>
     <App />
-  </StrictMode>,
+  // </StrictMode>,
 )

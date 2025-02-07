@@ -1,0 +1,42 @@
+export default  [
+          {
+            "title": "Blog Post Application",
+            "image": "img/Screenshot 2024-10-24 165927.png",
+            "alt": "Blog Post Application",
+            "description": "A JavaScript-based application that utilizes local storage and APIs to manage blog posts.",
+            "github_link": "https://github.com/krishnakanthpathi/blogit",
+            "website_link": "https://krishnakanthpathi.github.io/blogit/"
+          },
+          {
+            "title": "Webmage College Website Contest",
+            "image": "img/Screenshot 2024-10-24 170252.png",
+            "alt": "Webmage College Website Contest",
+            "description": "Participated in the Webmage contest to develop a responsive and interactive website for my college, showcasing the college's features and events.",
+            "github_link": "https://github.com/krishnakanthpathi/webmage",
+            "website_link": "https://krishnakanthpathi.github.io/webmage/"
+          },
+          {
+            "title": "Stack and Queue Simulation",
+            "image": "img/simulation.png",
+            "alt": "Stack and Queue Simulation",
+            "description": "A simulation tool to visualize stack and queue operations, aiding in understanding data structure concepts.",
+            "github_link": "https://github.com/krishnakanthpathi/stack-queue-simulation",
+            "website_link": "https://krishnakanthpathi.github.io/stack-queue-simulation/"
+          },
+          {
+            "title": "SVLN Weighing Scales",
+            "image": "img/svaln.png",
+            "alt": "SVLN Weighing Scales",
+            "description": "An e-commerce project using a mock API to manage products and simulate a shopping experience for weighing scales.",
+            "github_link": "https://github.com/krishnakanthpathi/svln",
+            "website_link": "https://krishnakanthpathi.github.io/svln/"
+          },
+          {
+            "title": "Graph Traversals",
+            "image": "img/graphproject.png",
+            "alt": "graph Projects",
+            "description": "A project demonstrating graph traversal algorithms including Breadth-First Search (BFS) and Depth-First Search (DFS).",
+            "github_link": "https://github.com/krishnakanthpathi/graph-traversals",
+            "website_link": "https://krishnakanthpathi.github.io/projects/graphtraversals/index.html"
+          }
+]
