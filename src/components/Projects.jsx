@@ -3,19 +3,13 @@ import ProjectsData from "../data/ProjectsData"
 
 
 export default function Projects() {
-    
-    const projects = ProjectsData.map((project) => {
-        return ( 
+    // array of jsx objects
+    const projects = ProjectsData.map((project) =>  (  
             <Cards 
-                title = {project.title} 
-                description = {project.description}
-                image = {project.image}
-                alt = {project.alt}
-                github_link = {project.github_link}
-                website_link = {project.website_link}
+                key={project.id} 
+                {...project}
             />
-        )
-    })
+        ))
 
 
     return (
@@ -23,6 +17,7 @@ export default function Projects() {
             <div className="container">
                 <h2 className="section-title">Projects</h2>
                 <div className="row mt-4">
+                    {/* this only expects jsx objects to display */}
                     {projects}
                 </div>
                 

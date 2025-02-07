@@ -3,7 +3,7 @@ export default function Skills() {
         <>
           <section className="container py-5 text-center">
             <h2 className="section-title">Skills</h2>
-            <div className="text-center mt-4">
+            <div className="text-center mt-3">
                 <div className="skills-icons d-flex flex-wrap justify-content-center">
                     <div className="skill-item mx-3 my-2">
                         <i className="fab mx-2 fa-java skill-icons java-icon"></i>
