@@ -1,9 +1,10 @@
+import "../src/assets/css/style.css"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Skills from "./components/Skills"
-import "../src/assets/css/style.css"
 import Projects from "./components/Projects"
+import Achievements from "./components/Achievements"
 
 function App() {
     return (
@@ -13,6 +14,8 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Achievements />  
+      
     </>
     )
   

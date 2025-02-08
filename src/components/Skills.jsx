@@ -37,7 +37,7 @@ export default function Skills() {
 
 
             </div>
-            <p className="text-center mt-4">Skilled in Data Structures and Algorithms with over 800 problems solved on LeetCode.</p>
+            <p className="text-center mt-4">Skilled in Data Structures and Algorithms with over 1000 problems solved on LeetCode.</p>
             <p className="text-center mt-2">Passionate to Become a Full Stack Web Developer</p>
         </section>
         </>
