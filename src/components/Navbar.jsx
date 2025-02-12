@@ -1,4 +1,4 @@
-export default function Navbar() {
+export default function Navbar(props) {
 
     return(
         <nav className="navbar navbar-expand-lg">
@@ -12,7 +12,7 @@ export default function Navbar() {
                 <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
                 <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
                 <li className="nav-item">
-                    <button id="toggle-theme" className="btn btn-outline-dark">Dark Mode</button>
+                    <button id="toggle-theme" onClick={props.darkmode} className="btn btn-outline-dark">Dark Mode</button>
                 </li>
                 </ul>
             </div>
