@@ -28,12 +28,12 @@ function App() {
     
     return (
     <>
-      <Navbar darkmode={toggleDark} />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Achievements />  
+      <Navbar darkmode={toggleDark} theme = {Dark} />
+      <Hero theme = {Dark}/>
+      <About theme = {Dark} />
+      <Skills theme = {Dark} />
+      <Projects theme = {Dark} />
+      <Achievements theme = {Dark} />  
       
     </>
     )

@@ -1,7 +1,7 @@
 export default function Skills() {
     return(
         <>
-          <section className="container py-5 text-center">
+          <section className="container py-5 {props.theme ? 'text-light' : 'text-dark'} text-center">
             <h2 className="section-title">Skills</h2>
             <div className="text-center mt-3">
                 <div className="skills-icons d-flex flex-wrap justify-content-center">

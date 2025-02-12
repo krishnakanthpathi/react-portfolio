@@ -2,11 +2,12 @@ import Cards from "./Cards"
 import ProjectsData from "../data/ProjectsData"
 
 
-export default function Projects() {
+export default function Projects(props) {
     // array of jsx objects
     const projects = ProjectsData.map((project) =>  (  
             <Cards 
                 key={project.id} 
+                theme={props.theme}
                 {...project}
             />
         ))

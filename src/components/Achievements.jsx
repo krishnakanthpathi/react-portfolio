@@ -1,11 +1,12 @@
-const Achievements = () => {
+const Achievements = (props) => {
+    const theme = props.theme ? "text-light bg-dark" : "text-dark bg-light"
     return (
-        <section id="achievements" className="container my-5">
+        <section id="achievements" className= "container my-5 ">
             <h2 className="text-center mb-4">Achievements</h2>
             <div className="row">
                 {/* repeated row */}
                 <div className="col-md-4 mb-4">
-                    <div className="card shadow-sm">
+                    <div className = {"card shadow-sm " + theme}>
                         <div className="card-body">
                             <h5 className="card-title">
                                 <i className="fas fa-trophy" style={{ color: '#ff9800', fontSize: '2rem' }}></i> 1st Prize in Crack the Jumble Code

@@ -1,7 +1,7 @@
 export default function Navbar(props) {
-
+    const navclass = "navbar navbar-expand-lg "
     return(
-        <nav className="navbar navbar-expand-lg">
+        <nav className = { props.theme ? navclass + 'navbar-dark' : navclass  + "navbar-light"}>
             <div className="container">
             <a className="navbar-brand" href="#">Krishna Kanth Pathi</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,7 +12,7 @@ export default function Navbar(props) {
                 <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
                 <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
                 <li className="nav-item">
-                    <button id="toggle-theme" onClick={props.darkmode} className="btn btn-outline-dark">Dark Mode</button>
+                    <button id="toggle-theme" onClick={props.darkmode} className="btn btn-dark">Dark Mode</button>
                 </li>
                 </ul>
             </div>
