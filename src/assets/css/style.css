@@ -1,3 +1,9 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    transition: background-color 0.3s ease;
+
+}
+
 .skill-icons {
     font-size: 2em;
 }
