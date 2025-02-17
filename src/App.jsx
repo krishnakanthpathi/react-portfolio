@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Route , Routes } from "react-router-dom"
 
 function App() {
     const [darkMode, setDarkMode] = useState(true);
@@ -25,11 +26,21 @@ function App() {
     return (
         <>
             <Navbar darkmode={toggleDarkMode} theme={darkMode} />
-            <Hero theme={darkMode} />
+            {/* <Hero theme={darkMode} />
             <About theme={darkMode} />
             <Skills theme={darkMode} />
             <Projects theme={darkMode} />
             <Achievements theme={darkMode} />
+            <Footer /> */}
+
+            <Routes>
+                <Route path="/" element={<Hero />} />
+                <Route path="/about" element={ <> <About /> <Skills/> </>} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/projects" element={<Projects theme={darkMode} />} />
+                <Route path="/achievements" element={<Achievements />} />
+            </Routes>
+            
             <Footer />
         </>
     );
