@@ -18,7 +18,6 @@ export default function Navbar(props) {
                 <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
 
-
                 <li className="nav-item">
                     <button id="toggle-theme" onClick={props.darkmode} className={!props.theme ? "btn btn-dark" : "btn btn-light"}>
                         {props.theme ? "Light" : "Dark"} Mode</button>
