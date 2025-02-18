@@ -10,8 +10,7 @@ export default function Cards(props) {
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text"> {props.description} </p>
                         
-                    <a href={props.gitlink} className="btn mx-2 btn-outline-primary">View on GitHub</a>
-                    <a href={props.weblink} className="btn btn-outline-secondary">View Website</a>
+                    <a href={props.link} className="btn mx-2 btn-outline-primary">Link</a>
                 </div>
             </div>
         </div>

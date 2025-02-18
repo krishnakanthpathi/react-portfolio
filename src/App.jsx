@@ -51,13 +51,14 @@ function App() {
                             opacity: 1, // Fade in text as it reveals
                         }}
                         transition={{ duration: 1 }} // Adjust duration to control speed
+
                     > <About /> <Skills/> </motion.div>
                 
                 
                 } />
                 <Route path="/skills" element={ <Skills />} />
                 <Route path="/projects" element={<Projects theme={darkMode} />} />
-                <Route path="/achievements" element={<Achievements />} />
+                <Route path="/achievements" element={<Achievements theme = {darkMode}/>} />
             </Routes>
             
             <Footer />

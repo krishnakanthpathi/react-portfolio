@@ -1,3 +1,5 @@
+import resumeurl from "../data/ResumeData";
+
 export default function Hero() {
     return (
         <>
@@ -7,7 +9,7 @@ export default function Hero() {
                 <h1 className="mt-4"><strong>Krishna Kanth Pathi</strong></h1>
                 <h2>Data Structures & Algorithms Enthusiast</h2>
                 <p className="mt-2">Passionate to Become Full Stack Web Developer</p>
-                <a href="#" className="btn btn-primary">Download Resume</a>
+                <a href={resumeurl.url} className="btn btn-primary">Download Resume</a>
             </div>
         </section>
         </>
