@@ -1,6 +1,22 @@
-import resumeurl from "../data/ResumeData";
+import React from "react";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+    const [resumeurl, setResumeurl] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch('https://portfolio-backend-bs6x.onrender.com/resume',{
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+            const data = await response.json();
+            setResumeurl(data.pop());
+        };
+        fetchData();
+    }, []);
+
     return (
         <>
         <section className="hero my-5">

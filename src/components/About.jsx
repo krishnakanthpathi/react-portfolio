@@ -1,7 +1,24 @@
 import { motion } from 'framer-motion';
-import Aboutdata from '../data/AboutData';
+import React from 'react';
+import { useEffect, useState } from 'react';
 
 export default function About() {
+    const url = "https://portfolio-backend-bs6x.onrender.com/about";
+    
+    const [Aboutdata, setAbout] = useState([]);
+    useEffect(() => {
+        const getData = async () => {
+            const response = await fetch(url, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+            const data = await response.json();
+            setAbout(data);
+        };
+        getData();
+    }, []);
     return(
         <>
         <section id="about" className="container text-center pt-5">

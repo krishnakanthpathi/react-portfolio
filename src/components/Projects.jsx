@@ -1,8 +1,27 @@
 import Cards from "./Cards"
-import ProjectsData from "../data/ProjectsData"
+import React from 'react';
+import { useEffect, useState } from 'react';
+
 
 export default function Projects(props) {
     // array of jsx objects
+    const url = "https://portfolio-backend-bs6x.onrender.com/projects";
+    const [ProjectsData, setProjects] = useState([]);
+    useEffect(() => {
+        const getData = async () => {
+            const response = await fetch(url, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const data = await response.json(); // Convert response to JSON
+            setProjects(data);
+        };
+
+        getData();
+    }, []); 
+
     const projects = ProjectsData.map((project) =>  (  
             <Cards 
                 key={project._id} 

@@ -1,8 +1,27 @@
 import AchievementsData from "../data/AchievementsData";
 import AchievementCard from "./AchievementCard";
+import React from 'react';
+import { useEffect, useState } from 'react';
 
 const Achievements = (props) => {
     const theme = props.theme ? "text-light bg-dark" : "text-dark bg-light"
+    const url = "https://portfolio-backend-bs6x.onrender.com/achievements";
+    const [AchievementsData, setAchievements] = useState([]);
+    useEffect(() => {
+        const getData = async () => {
+            const response = await fetch(url, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const data = await response.json();
+            setAchievements(data);
+        };
+        getData();
+    }, []);
+
+
     const cards = AchievementsData.map((achievement, index) => {
         return ( 
             <>
