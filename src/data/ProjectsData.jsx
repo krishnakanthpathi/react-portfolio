@@ -1,4 +1,4 @@
-const url = "http://localhost:8080/projects";
+const url = "https://portfolio-backend-bs6x.onrender.com/projects";
 
 const getData = async () => {
   try {
@@ -19,8 +19,7 @@ const getData = async () => {
     console.error("Error fetching data:", error);
   }
 };
-const data = await getData()
-
+const data = await getData();
 export default data ;
 
 

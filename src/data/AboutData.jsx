@@ -1,4 +1,4 @@
-const url = "http://localhost:8080/about";
+const url = "https://portfolio-backend-bs6x.onrender.com/about";
 
 const getData = async () => {
     const response = await fetch(url , {
