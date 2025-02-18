@@ -19,7 +19,7 @@ const getData = async () => {
     console.error("Error fetching data:", error);
   }
 };
-export default getData().then(data => data.pop());
+export default getData().then(data => data);
 
 
 
