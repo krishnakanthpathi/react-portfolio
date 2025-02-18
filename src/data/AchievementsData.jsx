@@ -11,6 +11,10 @@ const getData = async () => {
   return data;
 }
 
-const data = await getData();
+(async () => {
+  const data = await getData();
+  console.log(data);
+})();
+
 export default data;
 

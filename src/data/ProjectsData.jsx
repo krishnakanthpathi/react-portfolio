@@ -19,7 +19,12 @@ const getData = async () => {
     console.error("Error fetching data:", error);
   }
 };
-const data = await getData();
+
+(async () => {
+  const data = await getData();
+  console.log(data);
+})();
+
 export default data ;
 
 
