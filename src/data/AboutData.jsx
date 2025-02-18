@@ -11,8 +11,4 @@ const getData = async () => {
     return data;
 }
 
-(async () => {
-    const data = await getData();
-})();
-
-export default data.pop();
+export default (await getData()).pop();
