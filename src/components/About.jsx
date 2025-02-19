@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 export default function About() {
     const url = "https://portfolio-backend-bs6x.onrender.com/about";
     
-    const [Aboutdata, setAbout] = useState([]);
+    const [Aboutdata, setAbout] = useState("Hi there! I'm a Full Stack Web Developer");
     useEffect(() => {
         const getData = async () => {
             const response = await fetch(url, {
@@ -15,7 +15,8 @@ export default function About() {
                 },
             });
             const data = await response.json();
-            setAbout(data);
+            setAbout(data.pop());
+            console.log(data)
         };
         getData();
     }, []);
