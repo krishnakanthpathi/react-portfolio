@@ -27,7 +27,7 @@ const Achievements = (props) => {
             <>
                 <AchievementCard 
                     key={achievement._id}
-                    theme={theme}
+                    theme={props.theme}
                     title={achievement.title}
                     description={achievement.description}
                     link={achievement.link}
