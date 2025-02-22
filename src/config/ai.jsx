@@ -64,7 +64,7 @@ export default function Ai() {
       <iframe
         title="Generated Content"
         srcDoc={iframeContent}
-        style={{ width: "100%", height: "500px", border: "1px solid #ccc" }}
+        style={{ width: "100%", height: "400px", padding:"15px" , border: "1px solid #ccc" }}
       />
     </div>
   );
