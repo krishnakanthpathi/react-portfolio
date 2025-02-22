@@ -12,6 +12,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
 import Footer from "./components/Footer";
+import Ai from "./config/ai";
 
 function App() {
     const [darkMode, setDarkMode] = useState(true);
@@ -56,6 +57,8 @@ function App() {
                 
                 
                 } />
+                
+                <Route path="/ai" element={ <Ai />} />
                 <Route path="/skills" element={ <Skills />} />
                 <Route path="/projects" element={<Projects theme={darkMode} />} />
                 <Route path="/achievements" element={<Achievements theme = {darkMode}/>} />
