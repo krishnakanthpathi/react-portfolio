@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
+const key = "AIzaSyD94umwvC8v8-FkEwV_K_F1W6irtzWyAVs";
+const genAI = new GoogleGenerativeAI(key);
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 export default function Ai() {
   const [iframeContent, setIframeContent] = useState("");
-  const key = "AIzaSyD94umwvC8v8-FkEwV_K_F1W6irtzWyAVs";
-  const genAI = new GoogleGenerativeAI(key);
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     async function fetchHtml() {
       const prompt = `
@@ -15,8 +15,8 @@ export default function Ai() {
         The project should:  
         - Be interactive and visually appealing.  
         - Have a **clean, minimalistic, and modern** UI.  
-        - Use **animations and dynamic elements** for a smooth user experience.  
-        - Be a **fun or useful tool**, such as a productivity app, an interactive game, or a unique visual experience.  
+        - Use **animations and dynamic elements create any type of projects ** for a smooth user experience.  
+        - Be a **fun or useful tool**, such as a productivity app, an interactive game, or a unique visual experience.   
         - Use **only raw HTML, CSS, and JavaScript** (no frameworks or libraries).  
         - Output only the **code** without any explanations.  
       `;
@@ -43,7 +43,7 @@ export default function Ai() {
           </body>
           </html>
         `;
-
+        setLoading(false);
         setIframeContent(fullContent);
       } catch (error) {
         console.error("Error generating content:", error);
@@ -52,13 +52,19 @@ export default function Ai() {
 
     fetchHtml();
   }, []);
+  const spinner = "spinner-border display-center text-warning " + (loading ? "" : "d-none");
 
   return (
     <div>
+      <div className="d-flex justify-content-center">
+        <div className={spinner} role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
       <iframe
         title="Generated Content"
         srcDoc={iframeContent}
-        style={{ width: "100%", height: "400px", border: "1px solid #ccc" }}
+        style={{ width: "100%", height: "500px", border: "1px solid #ccc" }}
       />
     </div>
   );
