@@ -1,75 +1,74 @@
-# React + Vite Project
+# ⚛️React + ⚡Vite Project
 
-This project is built using React and Vite. It includes essential configurations for ESLint, Bootstrap, and React Router.
+This 📌 is built using ⚛️ and ⚡. It includes 🔧 for 🚨, 🎨, and 🗺️.
 
-## Project Structure
+## 📂 Structure
 
 ```
 📦 project-root
- ┣ 📂 node_modules
- ┣ 📂 public
- ┣ 📂 src
- ┃ ┣ 📜 main.jsx
- ┃ ┣ 📜 App.jsx
- ┃ ┣ 📂 components
- ┃ ┗ 📂 assets
- ┣ 📜 .gitignore
- ┣ 📜 eslint.config.js
- ┣ 📜 index.html
- ┣ 📜 package.json
- ┣ 📜 package-lock.json
- ┣ 📜 vite.config.js
- ┣ 📜 README.md
+ ┣ 📂 📁 node_modules
+ ┣ 📂 🌐 public
+ ┣ 📂 📜 src
+ ┃ ┣ 📜 🏁 main.jsx
+ ┃ ┣ 📜 📄 App.jsx
+ ┃ ┣ 📂 🧩 components
+ ┃ ┗ 📂 🎨 assets
+ ┣ 📜 🚫 .gitignore
+ ┣ 📜 🚨 eslint.config.js
+ ┣ 📜 🏠 index.html
+ ┣ 📜 📦 package.json
+ ┣ 📜 🔒 package-lock.json
+ ┣ 📜 ⚡ vite.config.js
+ ┣ 📜 📖 README.md
 ```
 
-## Installation
+## 🛠️ Installation
 
-1. Clone the repository:
+1. 🖥️ Clone the 📌:
    ```sh
    git clone <repo-url>
    cd project-root
    ```
 
-2. Install dependencies:
+2. 📥 Install 📦:
    ```sh
    npm install
    ```
 
-3. Run the development server:
+3. 🚀 Run the 🏗️ server:
    ```sh
    npm run dev
    ```
 
-4. Build for production:
+4. 🏗️ Build for 🌎:
    ```sh
    npm run build
    ```
 
-5. Preview production build:
+5. 👀 Preview 🌎 build:
    ```sh
    npm run preview
    ```
 
-## Dependencies
+## 📦 Dependencies
 
-- **React**: `react`, `react-dom`
-- **Routing**: `react-router-dom`
-- **Styling**: `bootstrap`, `framer-motion`
-- **Utilities**: `axios`, `@google/generative-ai`
-- **Development**: `eslint`, `vite`, `@vitejs/plugin-react`
+- **⚛️**: `react`, `react-dom`
+- **🗺️ Routing**: `react-router-dom`
+- **🎨 Styling**: `bootstrap`, `framer-motion`
+- **🛠️ Utilities**: `axios`, `@google/generative-ai`
+- **🛠️ Development**: `eslint`, `vite`, `@vitejs/plugin-react`
 
-## Configuration Files
+## ⚙️ Config Files
 
-- **`vite.config.js`**: Configures Vite with React and ESBuild settings.
-- **`eslint.config.js`**: Defines ESLint rules, including React hooks and refresh plugins.
-- **`package.json`**: Lists dependencies and npm scripts.
-- **`index.html`**: Root HTML file loading the React app.
+- **`⚡ vite.config.js`**: Configures ⚡ with ⚛️ and 🔧.
+- **`🚨 eslint.config.js`**: Defines 🚨 rules, including ⚛️ 🔄 and refresh 🔌.
+- **`📦 package.json`**: Lists 📦 and npm 🏗️.
+- **`🏠 index.html`**: Root 🏠 file loading the ⚛️ 📌.
 
-## License
+## 📜 License
 
-This project is licensed under the MIT License.
+This 📌 is 📜 under the 🏛️ MIT License.
 
 ---
 
-_Developed by Krishna Kanth_
-
+_👨‍💻 Developed by Krishna Kanth_
