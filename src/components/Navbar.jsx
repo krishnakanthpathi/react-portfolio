@@ -16,7 +16,7 @@ export default function Navbar(props) {
                 
                 <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/Ai">Ai</Link></li>
+                {/* <li className="nav-item"><Link className="nav-link" to="/Ai">Ai</Link></li> */}
                 <li className="nav-item"><Link className="nav-link" to="/Achievements">Achievements</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
 

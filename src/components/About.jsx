@@ -7,6 +7,7 @@ export default function About() {
     
     const [Aboutdata, setAbout] = useState("Hi there! I'm a Full Stack Web Developer");
     const [loader , setloader] = useState(true);
+    
     useEffect(() => {
         const getData = async () => {
             const response = await fetch(url, {
