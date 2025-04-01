@@ -23,7 +23,10 @@ export default function Hero() {
         <>
         <section className="hero my-5">
             <div className="container text-center">
-                <i className="fa-solid display-1 fa-face-grin-wink"></i>
+{/*                 <i className="fa-solid display-1 fa-face-grin-wink"></i> */}
+                <div class="d-flex justify-content-center">
+                    <img src="https://avatars.githubusercontent.com/u/110235523?s=400&u=0dc2bfe9a3d4ab4187135c607ed875c4f7192bd6&v=4" alt="Profile Image" class="rounded-circle img-fluid" />
+                </div>
                 <h1 className="mt-4"><strong>Krishna Kanth Pathi</strong></h1>
                 <h2>Data Structures & Algorithms Enthusiast</h2>
                 <p className="mt-2">Passionate to Become Full Stack Web Developer</p>
