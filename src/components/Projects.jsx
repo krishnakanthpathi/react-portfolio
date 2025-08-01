@@ -37,7 +37,7 @@ export default function Projects(props) {
     return (
         <section id="projects" className="py-5">
             <div className="container">
-                <h2 className="section-title">Projects</h2>
+                <h2 className="section-title text-center">Projects</h2>
                 <div className="row mt-4">
                     {/* this only expects jsx objects to display */}
                     {projects}
