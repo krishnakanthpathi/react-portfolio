@@ -1,1 +1,21 @@
  @import "tailwindcss";
+html {
+    scroll-behavior: smooth;
+    background: linear-gradient(
+    135deg,
+    rgba(80, 140, 220, 0.18),
+    rgba(30, 60, 120, 0.08)
+    );
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+ .glass-gradient {
+    background: linear-gradient(
+    135deg,
+    rgba(80, 140, 220, 0.18),
+    rgba(30, 60, 120, 0.08)
+    );
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
